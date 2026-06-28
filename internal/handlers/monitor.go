@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"net/http"
 	"strconv"
+	"strings"
 
 	"github.com/yashg0/linkpulse-website-monitoring-tool/internal/db"
 	"github.com/yashg0/linkpulse-website-monitoring-tool/internal/models"
@@ -139,6 +140,10 @@ func deleteMonitor(w http.ResponseWriter, r *http.Request) {
 }
 
 func MonitorHandler(w http.ResponseWriter, r *http.Request) {
+	if strings.HasSuffix(r.URL.Path, "/check") {
+		CheckerHandler(w, r)
+		return
+	}
 	switch r.Method {
 	case http.MethodGet:
 		getMonitor(w, r)

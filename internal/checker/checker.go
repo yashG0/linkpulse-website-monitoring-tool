@@ -11,7 +11,7 @@ var client = &http.Client{
 	Timeout: 10 * time.Second,
 }
 
-func CheckMonitor(m models.Monitor) models.CheckResult {
+func CheckMonitor(m *models.Monitor) models.CheckResult {
 	var r models.CheckResult
 	r.MonitorID = m.ID
 	r.CheckedAt = time.Now()
