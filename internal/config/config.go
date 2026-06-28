@@ -3,6 +3,7 @@ package config
 import (
 	"log"
 	"os"
+	"time"
 
 	"github.com/joho/godotenv"
 )
@@ -12,7 +13,7 @@ type Config struct {
 	Database      string
 	// WorkerCount   int
 	// CheckInterval time.Duration
-	// HTTPTimeout   time.Duration
+	HTTPTimeout   time.Duration
 }
 
 func Load() Config {
