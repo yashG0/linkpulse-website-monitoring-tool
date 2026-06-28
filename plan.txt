@@ -1,0 +1,311 @@
+=========================================================
+LinkPulse - URL Uptime Monitor
+Project Roadmap
+=========================================================
+
+Goal
+---------------------------------------------------------
+Build a production-inspired URL uptime monitoring service
+using Go, SQLite/PostgreSQL, goroutines, and REST APIs.
+
+Status Legend
+---------------------------------------------------------
+[ ] Not Started
+[~] In Progress
+[x] Completed
+
+
+=========================================================
+PHASE 1 - PROJECT SETUP
+=========================================================
+
+[ ] Initialize Go module
+[ ] Create folder structure
+[ ] Setup Git repository
+[ ] Add .gitignore
+[ ] Create README.md
+[ ] Dockerfile
+[ ] .env support
+[ ] Configuration package
+
+
+=========================================================
+PHASE 2 - DATABASE
+=========================================================
+
+[ ] Database connection
+[ ] Auto-create tables
+
+Monitors Table
+---------------
+[ ] id
+[ ] name
+[ ] url
+[ ] interval
+[ ] enabled
+[ ] created_at
+
+Results Table
+-------------
+[ ] id
+[ ] monitor_id
+[ ] status_code
+[ ] response_time
+[ ] success
+[ ] checked_at
+[ ] error_message
+
+
+=========================================================
+PHASE 3 - DATABASE LAYER
+=========================================================
+
+Monitors
+---------
+[ ] CreateMonitor
+[ ] GetMonitor
+[ ] GetAllMonitors
+[ ] UpdateMonitor
+[ ] DeleteMonitor
+
+Results
+-------
+[ ] SaveResult
+[ ] GetResultsByMonitor
+[ ] GetLatestResult
+[ ] DeleteResults
+
+
+=========================================================
+PHASE 4 - REST API
+=========================================================
+
+Monitors
+---------
+[ ] POST   /monitors
+[ ] GET    /monitors
+[ ] GET    /monitors/{id}
+[ ] PUT    /monitors/{id}
+[ ] DELETE /monitors/{id}
+
+Results
+-------
+[ ] GET /monitors/{id}/results
+
+Health
+------
+[ ] GET /health
+
+
+=========================================================
+PHASE 5 - URL CHECKER
+=========================================================
+
+[ ] HTTP client
+[ ] Configurable timeout
+[ ] Measure response time
+[ ] Detect failures
+[ ] Save check result
+
+Store
+-----
+[ ] Status code
+[ ] Response time
+[ ] Success/Failure
+[ ] Error message
+[ ] Timestamp
+
+
+=========================================================
+PHASE 6 - BACKGROUND WORKER
+=========================================================
+
+[ ] Scheduler
+[ ] Ticker
+[ ] Worker pool
+[ ] Goroutines
+[ ] Channels
+[ ] Stop workers gracefully
+
+Workflow
+---------
+Read monitors
+      ↓
+Find due monitors
+      ↓
+Workers perform checks
+      ↓
+Store results
+      ↓
+Wait for next interval
+
+
+=========================================================
+PHASE 7 - API FEATURES
+=========================================================
+
+[ ] Enable monitor
+[ ] Disable monitor
+[ ] Manual check endpoint
+[ ] Latest result endpoint
+[ ] Pagination
+[ ] Filtering
+[ ] Search
+
+
+=========================================================
+PHASE 8 - STATISTICS
+=========================================================
+
+[ ] Average response time
+[ ] Total checks
+[ ] Successful checks
+[ ] Failed checks
+[ ] Uptime percentage
+[ ] Last successful check
+[ ] Last failed check
+
+
+=========================================================
+PHASE 9 - CONFIGURATION
+=========================================================
+
+[ ] PORT
+[ ] DATABASE_URL
+[ ] WORKER_COUNT
+[ ] HTTP_TIMEOUT
+[ ] DEFAULT_INTERVAL
+[ ] LOG_LEVEL
+
+
+=========================================================
+PHASE 10 - LOGGING
+=========================================================
+
+[ ] Structured logging (log/slog)
+[ ] Request logging
+[ ] Worker logging
+[ ] Error logging
+
+
+=========================================================
+PHASE 11 - MIDDLEWARE
+=========================================================
+
+[ ] Request logging
+[ ] Panic recovery
+[ ] CORS
+[ ] Request ID
+
+
+=========================================================
+PHASE 12 - TESTING
+=========================================================
+
+[ ] Database tests
+[ ] Handler tests
+[ ] Checker tests
+[ ] Worker tests
+
+
+=========================================================
+PHASE 13 - DOCUMENTATION
+=========================================================
+
+[ ] README
+[ ] Installation
+[ ] Environment variables
+[ ] API documentation
+[ ] Example requests
+[ ] Project screenshots
+
+
+=========================================================
+PHASE 14 - DOCKER
+=========================================================
+
+[ ] Dockerfile
+[ ] Build image
+[ ] Run container
+
+
+=========================================================
+OPTIONAL ADVANCED FEATURES
+=========================================================
+
+[ ] Email notifications
+[ ] Webhook notifications
+[ ] Retry mechanism
+[ ] Rate limiting
+[ ] Prometheus metrics
+[ ] Grafana dashboard
+[ ] JWT authentication
+[ ] User accounts
+[ ] PostgreSQL support
+[ ] Docker Compose
+[ ] CI/CD (GitHub Actions)
+
+
+=========================================================
+PROJECT STRUCTURE
+=========================================================
+
+linkpulse/
+│
+├── cmd/
+│   └── api/
+│       └── main.go              # Application entry point
+│
+├── internal/
+│   ├── checker/
+│   │   ├── checker.go           # Check a single URL
+│   │   └── worker.go            # Background scheduler & workers
+│   │
+│   ├── config/
+│   │   └── config.go            # Load configuration from environment
+│   │
+│   ├── db/
+│   │   ├── db.go                # Database connection & initialization
+│   │   ├── monitors.go          # Monitor database queries
+│   │   └── results.go           # Check result database queries
+│   │
+│   ├── handlers/
+│   │   ├── monitors.go          # HTTP handlers
+│   │   └── router.go            # Route registration
+│   │
+│   ├── models/
+│   │   ├── monitor.go           # Monitor struct
+│   │   └── result.go            # CheckResult struct
+│   │
+│   └── server/
+│       └── server.go            # HTTP server setup
+│
+├── .env
+├── .gitignore
+├── Dockerfile
+├── go.mod
+├── go.sum
+├── README.md
+└── plan.txt
+
+
+=========================================================
+FINAL GOAL
+=========================================================
+
+A production-inspired Go backend demonstrating:
+
+✔ REST API
+✔ SQLite/PostgreSQL
+✔ Background workers
+✔ Goroutines
+✔ Channels
+✔ HTTP client
+✔ Context
+✔ Worker pool
+✔ Graceful shutdown
+✔ Structured logging
+✔ Docker
+✔ Testing
+✔ Clean architecture
+✔ Professional project structure
