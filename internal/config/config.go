@@ -9,7 +9,7 @@ import (
 
 type Config struct {
 	Port string
-	// Database      string
+	Database      string
 	// WorkerCount   int
 	// CheckInterval time.Duration
 	// HTTPTimeout   time.Duration
