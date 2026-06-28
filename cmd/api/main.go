@@ -4,26 +4,18 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"os"
 
-	"github.com/joho/godotenv"
+	"github.com/yashg0/linkpulse-website-monitoring-tool/internal/config"
 )
 
 func main() {
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatal("Failed to load .env")
-	}
+
+	cfg := config.Load()
 
 	http.HandleFunc("/api/test", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintln(w, "Working Done!")
 	})
-	port := os.Getenv("PORT")
 
-	if port == "" {
-		log.Fatal("PORT is not set")
-	}
-
-	log.Println("Server is running at", port)
-	log.Fatal(http.ListenAndServe(port, nil))
+	log.Println("Server is running at", cfg.Port)
+	log.Fatal(http.ListenAndServe(cfg.Port, nil))
 }
