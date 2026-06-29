@@ -1,6 +1,8 @@
 package db
 
 import (
+	"time"
+
 	"github.com/yashg0/linkpulse-website-monitoring-tool/internal/models"
 )
 
@@ -73,4 +75,15 @@ func GetAllResults() ([]models.CheckResult, error) {
 		return nil, err
 	}
 	return results, nil
+}
+
+func GetLastCheckTime(monitorID int) (time.Time, error) {
+	var lastChecked time.Time
+	row := DB.QueryRow("SELECT checked_at FROM check_results WHERE monitor_id=? ORDER BY checked_at DESC LIMIT 1", monitorID)
+
+	err := row.Scan(&lastChecked)
+	if err != nil {
+		return time.Time{}, err
+	}
+	return lastChecked, nil
 }

@@ -9,11 +9,11 @@ import (
 )
 
 type Config struct {
-	Port string
-	Database      string
+	Port     string
+	Database string
 	// WorkerCount   int
 	// CheckInterval time.Duration
-	HTTPTimeout   time.Duration
+	HTTPTimeout time.Duration
 }
 
 func Load() Config {
@@ -26,7 +26,12 @@ func Load() Config {
 	if port == "" {
 		log.Fatal("PORT environment variable is required")
 	}
+	database := os.Getenv("DATABASE")
+	if database == "" {
+		log.Fatal("DATABASE environment variable is required")
+	}
 	return Config{
-		Port: port,
+		Port:     port,
+		Database: database,
 	}
 }

@@ -11,6 +11,7 @@ func StartWorker() {
 	for {
 		monitors, err := db.GetEnabledMonitors()
 		if err != nil {
+			log.Printf("Failed to fetch monitors: %v", err)
 			continue
 		}
 
@@ -22,6 +23,6 @@ func StartWorker() {
 				continue
 			}
 		}
-		time.Sleep(1 * time.Minute)
+		time.Sleep(5 * time.Second)
 	}
 }
