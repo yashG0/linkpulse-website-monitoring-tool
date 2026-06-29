@@ -101,3 +101,34 @@ func DeleteMonitor(id int) error {
 	}
 	return nil
 }
+
+func GetEnabledMonitors() ([]models.Monitor, error) {
+	var monitors []models.Monitor
+
+	rows, err := DB.Query("SELECT id,name,url,interval,enabled FROM monitors WHERE enabled=TRUE")
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+
+	for rows.Next() {
+		var m models.Monitor
+
+		err := rows.Scan(
+			&m.ID,
+			&m.Name,
+			&m.URL,
+			&m.Interval,
+			&m.Enabled,
+		)
+		if err != nil {
+			return nil, err
+		}
+		monitors = append(monitors, m)
+	}
+	err = rows.Err()
+	if err != nil {
+		return nil, err
+	}
+	return monitors, nil
+}
