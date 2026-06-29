@@ -207,7 +207,7 @@ POST /api/monitors/{id}/check
 
 **Yash**
 
-GitHub: https://github.com/yourusername
+GitHub: https://github.com/yashG0
 
 ---
 
