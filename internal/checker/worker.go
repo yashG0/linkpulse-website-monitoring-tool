@@ -1,6 +1,7 @@
 package checker
 
 import (
+	"database/sql"
 	"log"
 	"time"
 
@@ -16,8 +17,26 @@ func StartWorker() {
 		}
 
 		for _, m := range monitors {
+			lastChecked, err := db.GetLastCheckTime(m.ID)
+			if err == sql.ErrNoRows {
+				result := CheckMonitor(&m)
+				if err := db.CreateResult(&result); err != nil {
+					log.Println(err)
+				}
+				continue
+			}
+			if err != nil {
+				log.Println(err)
+				continue
+			}
+
+			elapsed := time.Since(lastChecked)
+			if elapsed < time.Duration(m.Interval)*time.Second {
+				continue
+			}
+
 			result := CheckMonitor(&m)
-			err := db.CreateResult(&result)
+			err = db.CreateResult(&result)
 			if err != nil {
 				log.Print(err)
 				continue
