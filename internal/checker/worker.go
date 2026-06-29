@@ -8,7 +8,7 @@ import (
 	"github.com/yashg0/linkpulse-website-monitoring-tool/internal/db"
 )
 
-func StartWorker() {
+func StartWorker(stop <-chan struct{}) {
 	for {
 		monitors, err := db.GetEnabledMonitors()
 		if err != nil {
@@ -42,6 +42,13 @@ func StartWorker() {
 				continue
 			}
 		}
-		time.Sleep(5 * time.Second)
+		select {
+		case <-time.After(5 * time.Second):
+			// continue next iteration
+
+		case <-stop:
+			log.Println("Worker stopped")
+			return
+		}
 	}
 }
