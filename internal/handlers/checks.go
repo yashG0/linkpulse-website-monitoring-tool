@@ -18,12 +18,19 @@ func CheckerHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	parts := strings.Split(strings.Trim(r.URL.Path, "/"), "/")
-	id, err := strconv.Atoi(parts[2])
 
+	// Validate the path before accessing parts[2]
+	if len(parts) != 4 || parts[3] != "check" {
+		http.NotFound(w, r)
+		return
+	}
+
+	id, err := strconv.Atoi(parts[2])
 	if err != nil {
 		http.Error(w, "Invalid monitor ID", http.StatusBadRequest)
 		return
 	}
+
 	m, err := db.GetMonitor(id)
 	if err == sql.ErrNoRows {
 		http.Error(w, "Monitor not found", http.StatusNotFound)
@@ -33,6 +40,7 @@ func CheckerHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Database error", http.StatusInternalServerError)
 		return
 	}
+
 	result := checker.CheckMonitor(m)
 
 	if err := db.CreateResult(&result); err != nil {

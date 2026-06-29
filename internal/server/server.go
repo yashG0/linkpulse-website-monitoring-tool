@@ -12,7 +12,6 @@ func New(cfg config.Config) *http.Server {
 	mux.HandleFunc("/health", handlers.HealthHandler)
 	mux.HandleFunc("/api/monitors", handlers.MonitorsHandler)
 	mux.HandleFunc("/api/monitors/", handlers.MonitorHandler)
-
 	server := &http.Server{
 		Addr:    cfg.Port,
 		Handler: mux,

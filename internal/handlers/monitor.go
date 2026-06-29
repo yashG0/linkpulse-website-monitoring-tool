@@ -12,10 +12,13 @@ import (
 )
 
 func getMonitor(w http.ResponseWriter, r *http.Request) {
-	const prefix = "/api/monitors/"
-	idStr := r.URL.Path[len(prefix):]
-	idInt, err := strconv.Atoi(idStr)
+	parts := strings.Split(strings.Trim(r.URL.Path, "/"), "/")
+	if len(parts) != 3 {
+		http.NotFound(w, r)
+		return
+	}
 
+	idInt, err := strconv.Atoi(parts[2])
 	if err != nil {
 		http.Error(w, "Invalid monitor ID", http.StatusBadRequest)
 		return
@@ -79,9 +82,13 @@ func getAllMonitors(w http.ResponseWriter, r *http.Request) {
 func updateMonitor(w http.ResponseWriter, r *http.Request) {
 	defer r.Body.Close()
 
-	const prefix = "/api/monitors/"
-	idStr := r.URL.Path[len(prefix):]
-	idInt, err := strconv.Atoi(idStr)
+	parts := strings.Split(strings.Trim(r.URL.Path, "/"), "/")
+	if len(parts) != 3 {
+		http.NotFound(w, r)
+		return
+	}
+
+	idInt, err := strconv.Atoi(parts[2])
 	if err != nil {
 		http.Error(w, "Invalid monitor ID", http.StatusBadRequest)
 		return
@@ -117,9 +124,13 @@ func updateMonitor(w http.ResponseWriter, r *http.Request) {
 }
 
 func deleteMonitor(w http.ResponseWriter, r *http.Request) {
-	const prefix = "/api/monitors/"
-	idStr := r.URL.Path[len(prefix):]
-	idInt, err := strconv.Atoi(idStr)
+	parts := strings.Split(strings.Trim(r.URL.Path, "/"), "/")
+	if len(parts) != 3 {
+		http.NotFound(w, r)
+		return
+	}
+
+	idInt, err := strconv.Atoi(parts[2])
 	if err != nil {
 		http.Error(w, "Invalid monitor ID", http.StatusBadRequest)
 		return
@@ -144,6 +155,7 @@ func MonitorHandler(w http.ResponseWriter, r *http.Request) {
 		CheckerHandler(w, r)
 		return
 	}
+
 	switch r.Method {
 	case http.MethodGet:
 		getMonitor(w, r)
@@ -151,17 +163,6 @@ func MonitorHandler(w http.ResponseWriter, r *http.Request) {
 		updateMonitor(w, r)
 	case http.MethodDelete:
 		deleteMonitor(w, r)
-	default:
-		http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
-	}
-}
-
-func MonitorsHandler(w http.ResponseWriter, r *http.Request) {
-	switch r.Method {
-	case http.MethodGet:
-		getAllMonitors(w, r)
-	case http.MethodPost:
-		createMonitor(w, r)
 	default:
 		http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
 	}
