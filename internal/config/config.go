@@ -3,6 +3,7 @@ package config
 import (
 	"log"
 	"os"
+	"strings"
 	"time"
 
 	"github.com/joho/godotenv"
@@ -25,6 +26,9 @@ func Load() Config {
 	port := os.Getenv("PORT")
 	if port == "" {
 		log.Fatal("PORT environment variable is required")
+	}
+	if !strings.HasPrefix(port, ":") {
+		port = ":" + port
 	}
 	database := os.Getenv("DATABASE")
 	if database == "" {
