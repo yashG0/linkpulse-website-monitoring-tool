@@ -17,10 +17,10 @@ type Config struct {
 }
 
 func Load() Config {
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatal("Failed to load .env file")
-	}
+	_ = godotenv.Load()
+	// if err != nil {
+	// 	log.Fatal("Failed to load .env file")
+	// }
 
 	port := os.Getenv("PORT")
 	if port == "" {

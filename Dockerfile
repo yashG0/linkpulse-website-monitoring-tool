@@ -15,8 +15,6 @@ WORKDIR /app
 
 COPY --from=builder /app/linkpulse .
 
-COPY .env .
-
 EXPOSE 8080
 
 CMD ["./linkpulse"]
