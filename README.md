@@ -1,33 +1,38 @@
 # 🚀 LinkPulse – Website Monitoring Tool
 
-LinkPulse is a lightweight website monitoring service built with **Go** and **SQLite**. It periodically checks websites, records their status and response time, and exposes a clean REST API for managing monitors.
+LinkPulse is a backend website monitoring service built with **Go** and **SQLite** that continuously monitors website availability, records response metrics, and exposes a RESTful API for managing website monitors.
+
+The project demonstrates Go concurrency using **goroutines**, background workers, and a clean modular architecture built primarily with Go's standard library.
 
 ---
 
 ## ✨ Features
 
-* Create, update and delete website monitors
-* Enable or disable monitoring
-* Automatic background worker
-* Custom monitoring interval for each website
-* Measure response time
-* Store HTTP status codes
-* Save monitoring history
-* SQLite database
-* RESTful API
-* Graceful shutdown
-* Clean project structure using Go's standard library
+- Website monitor CRUD operations
+- Automatic background monitoring
+- Configurable monitoring interval for each website
+- Enable or disable monitors
+- Track HTTP response time
+- Record HTTP status codes
+- Store monitoring history
+- Concurrent monitoring using goroutines
+- SQLite data persistence
+- RESTful API
+- Graceful server shutdown
+- Clean and modular project architecture
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
-* Go
-* SQLite
-* modernc.org/sqlite
-* net/http
-* Goroutines
-* REST API
+| Technology | Purpose |
+|------------|---------|
+| Go | Backend development |
+| SQLite | Database |
+| modernc.org/sqlite | SQLite Driver |
+| net/http | HTTP Server |
+| Goroutines | Background monitoring |
+| RESTful API | API Architecture |
 
 ---
 
@@ -51,51 +56,59 @@ internal/
 
 ## ⚙️ Getting Started
 
-### Clone the repository
+### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/linkpulse-website-monitoring-tool.git
-cd linkpulse-website-monitoring-tool
+git clone https://github.com/yashG0/linkpulse.git
+cd linkpulse
 ```
 
-### Install dependencies
+### Install Dependencies
 
 ```bash
 go mod tidy
 ```
 
-### Create `.env`
+### Configure Environment
+
+Create a `.env` file:
 
 ```env
 PORT=:8080
 DATABASE=linkpulse.db
 ```
 
-### Run
+### Run the Application
 
 ```bash
 go run ./cmd/api
+```
+
+Server starts on:
+
+```
+http://localhost:8080
 ```
 
 ---
 
 ## 📡 API Endpoints
 
-### Health Check
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| GET | `/health` | Health Check |
+| POST | `/api/monitors` | Create Monitor |
+| GET | `/api/monitors` | Get All Monitors |
+| GET | `/api/monitors/{id}` | Get Monitor |
+| PUT | `/api/monitors/{id}` | Update Monitor |
+| DELETE | `/api/monitors/{id}` | Delete Monitor |
+| POST | `/api/monitors/{id}/check` | Trigger Manual Check |
 
-```
-GET /health
-```
+### Example Request
 
----
-
-### Create Monitor
-
-```
+```http
 POST /api/monitors
 ```
-
-Example JSON
 
 ```json
 {
@@ -108,107 +121,102 @@ Example JSON
 
 ---
 
-### Get All Monitors
-
-```
-GET /api/monitors
-```
-
----
-
-### Get Monitor
-
-```
-GET /api/monitors/{id}
-```
-
----
-
-### Update Monitor
-
-```
-PUT /api/monitors/{id}
-```
-
----
-
-### Delete Monitor
-
-```
-DELETE /api/monitors/{id}
-```
-
----
-
-### Check Website Manually
-
-```
-POST /api/monitors/{id}/check
-```
-
----
-
-## 🗄 Database
+## 🗄 Database Schema
 
 ### monitors
 
-| Column   | Type    |
-| -------- | ------- |
-| id       | INTEGER |
-| name     | TEXT    |
-| url      | TEXT    |
+| Column | Type |
+|--------|------|
+| id | INTEGER |
+| name | TEXT |
+| url | TEXT |
 | interval | INTEGER |
-| enabled  | BOOLEAN |
+| enabled | BOOLEAN |
 
 ### check_results
 
-| Column        | Type     |
-| ------------- | -------- |
-| id            | INTEGER  |
-| monitor_id    | INTEGER  |
-| status_code   | INTEGER  |
-| response_time | INTEGER  |
-| success       | BOOLEAN  |
-| checked_at    | DATETIME |
-| error_message | TEXT     |
+| Column | Type |
+|--------|------|
+| id | INTEGER |
+| monitor_id | INTEGER |
+| status_code | INTEGER |
+| response_time | INTEGER |
+| success | BOOLEAN |
+| checked_at | DATETIME |
+| error_message | TEXT |
 
 ---
 
-## 🔄 How It Works
+## ⚙️ How It Works
 
-1. User creates a monitor.
-2. Background worker loads all enabled monitors.
-3. Each monitor is checked based on its configured interval.
-4. HTTP status code, response time and timestamp are stored in SQLite.
-5. Monitoring history can be retrieved through the API.
+```text
+Create Monitor
+        │
+        ▼
+Background Worker
+        │
+        ▼
+Periodic Website Check
+        │
+        ▼
+Measure Response Time
+        │
+        ▼
+Store Status & History
+        │
+        ▼
+Retrieve Monitoring Data via REST API
+```
 
 ---
 
 ## 📸 Screenshots
 
-> Add screenshots of your API responses, terminal logs and project structure here.
+### API Responses
+
+> Add Postman screenshots
+
+### Terminal Logs
+
+> Add monitoring worker screenshots
+
+### Database
+
+> Add SQLite database screenshot
 
 ---
 
-## 🔮 Future Improvements
+## 🎯 Why I Built This
 
-* Docker support
-* Unit tests
-* Worker pool for concurrent checks
-* Email notifications
-* Dashboard frontend
-* Prometheus metrics
-* Authentication
-* PostgreSQL support
+I built **LinkPulse** to strengthen my understanding of backend development in Go, REST API design, concurrency using goroutines, and database-driven applications.
+
+Instead of relying on third-party web frameworks, the project focuses on building maintainable backend services using Go's standard library and clean project organization.
+
+---
+
+## 🚀 Future Improvements
+
+- Docker support
+- JWT Authentication
+- Worker pool for concurrent checks
+- Email notifications
+- Dashboard frontend
+- Prometheus metrics
+- PostgreSQL support
+- Unit & Integration Tests
+- Rate limiting
+- Health analytics dashboard
 
 ---
 
 ## 👨‍💻 Author
 
-**Yash**
+**Yash Gaurkar**
 
-GitHub: https://github.com/yashG0
+- GitHub: https://github.com/yashG0
+- LinkedIn: https://linkedin.com/in/yash-gaurkar-a897b3228
+- Portfolio: https://yash-portfolio-app.vercel.app
 
 ---
 
-⭐ If you found this project useful, consider giving it a star!
+⭐ If you found this project helpful, consider giving it a **Star**.
