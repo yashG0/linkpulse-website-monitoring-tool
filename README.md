@@ -161,17 +161,31 @@ The scheduled worker runs as a single background goroutine. It and the manual-ch
 
 ## 📸 Screenshots
 
-### API Responses
+These visuals show real responses and records from a local LinkPulse run using a temporary SQLite database and an `Example Domain` monitor. Response times and timestamps vary between runs.
 
-> Add Postman screenshots
+### API Response
 
-### Terminal Logs
+A manual check returns the HTTP status, response time, success state, and check timestamp as JSON.
 
-> Add monitoring worker screenshots
+<p align="center">
+  <img src="docs/screenshots/api-response.svg" alt="LinkPulse manual check API response showing HTTP 201, HTTP 200 target status, and a 162 millisecond response time" width="100%" />
+</p>
 
-### Database
+### Terminal Session
 
-> Add SQLite database screenshot
+The health endpoint and monitor list were queried from the running Go service. Successful background checks are quiet; the worker writes logs when it encounters errors or shuts down.
+
+<p align="center">
+  <img src="docs/screenshots/terminal-session.svg" alt="Local LinkPulse terminal session showing a successful health response and configured monitor" width="100%" />
+</p>
+
+### SQLite Records
+
+The database stores monitor configuration separately from each recorded check result, linked by `monitor_id`.
+
+<p align="center">
+  <img src="docs/screenshots/sqlite-records.svg" alt="SQLite monitor and check result records from a local LinkPulse run" width="100%" />
+</p>
 
 ---
 

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="620" viewBox="0 0 1400 620" role="img" aria-label="LinkPulse · local terminal session">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101925"/><stop offset="1" stop-color="#0c1118"/></linearGradient></defs>
+<rect width="1400" height="620" rx="24" fill="url(#bg)"/><rect x="1" y="1" width="1398" height="618" rx="23" fill="none" stroke="#30363d"/>
+<circle cx="34" cy="34" r="7" fill="#ff7b72"/><circle cx="58" cy="34" r="7" fill="#d29922"/><circle cx="82" cy="34" r="7" fill="#3fb950"/>
+<text x="112" y="41" fill="#8b949e" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="600">LinkPulse · local terminal session</text>
+<text x="48" y="91" fill="#e6edf3" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700">Service health and configured monitor</text>
+<rect x="48" y="122" width="1304" height="452" rx="14" fill="#161b22" stroke="#30363d"/>
+<text x="80" y="172" fill="#3fb950" font-family="ui-monospace,SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="16" font-weight="400">$ PORT=:18081 DATABASE=/tmp/linkpulse-readme-demo.db go run ./cmd/api</text>
+<text x="80" y="246" fill="#79c0ff" font-family="ui-monospace,SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="16" font-weight="400">$ curl -i http://127.0.0.1:18081/health</text>
+<text x="80" y="283" fill="#e6edf3" font-family="ui-monospace,SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="16" font-weight="400">HTTP/1.1 200 OK</text>
+<text x="80" y="320" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="16" font-weight="400">Content-Type: text/plain; charset=utf-8</text>
+<text x="80" y="357" fill="#3fb950" font-family="ui-monospace,SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="16" font-weight="400">Working Done!</text>
+<text x="80" y="431" fill="#79c0ff" font-family="ui-monospace,SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="16" font-weight="400">$ curl -sS http://127.0.0.1:18081/api/monitors</text>
+<text x="80" y="468" fill="#e6edf3" font-family="ui-monospace,SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="16" font-weight="400">[{&quot;id&quot;:1,&quot;name&quot;:&quot;Example Domain&quot;,&quot;url&quot;:&quot;https://example.com&quot;,</text>
+<text x="80" y="505" fill="#e6edf3" font-family="ui-monospace,SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="16" font-weight="400"> &quot;interval&quot;:60,&quot;enabled&quot;:true}]</text>
+<text x="80" y="535" fill="#8b949e" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="400">Local run · temporary SQLite database · responses from the Go API</text>
+</svg>

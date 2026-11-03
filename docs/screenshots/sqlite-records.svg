@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="600" viewBox="0 0 1400 600" role="img" aria-label="LinkPulse · SQLite records">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101925"/><stop offset="1" stop-color="#0c1118"/></linearGradient></defs>
+<rect width="1400" height="600" rx="24" fill="url(#bg)"/><rect x="1" y="1" width="1398" height="598" rx="23" fill="none" stroke="#30363d"/>
+<circle cx="34" cy="34" r="7" fill="#ff7b72"/><circle cx="58" cy="34" r="7" fill="#d29922"/><circle cx="82" cy="34" r="7" fill="#3fb950"/>
+<text x="112" y="41" fill="#8b949e" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="600">LinkPulse · SQLite records</text>
+<text x="48" y="91" fill="#e6edf3" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700">Monitor configuration and recorded check result</text>
+<rect x="48" y="122" width="1304" height="192" rx="14" fill="#161b22" stroke="#30363d"/>
+<text x="78" y="161" fill="#3fb950" font-family="ui-monospace,SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="17" font-weight="700">monitors</text>
+<text x="78" y="199" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="15" font-weight="400">id  name           url                    interval  enabled</text>
+<line x1="76" y1="216" x2="1324" y2="216" stroke="#30363d"/>
+<text x="78" y="250" fill="#e6edf3" font-family="ui-monospace,SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="15" font-weight="400">1   Example Domain https://example.com 60        true</text>
+<rect x="48" y="338" width="1304" height="210" rx="14" fill="#161b22" stroke="#30363d"/>
+<text x="78" y="377" fill="#3fb950" font-family="ui-monospace,SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="17" font-weight="700">check_results</text>
+<text x="78" y="415" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="15" font-weight="400">id  monitor_id  status_code  response_time  success  checked_at</text>
+<line x1="76" y1="432" x2="1324" y2="432" stroke="#30363d"/>
+<text x="78" y="466" fill="#e6edf3" font-family="ui-monospace,SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="14" font-weight="400">2   1           200          162 ms         true     2026-11-03 16:40 +05:30</text>
+<text x="78" y="516" fill="#79c0ff" font-family="ui-monospace,SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="13" font-weight="400">Foreign key: check_results.monitor_id → monitors.id</text>
+</svg>
