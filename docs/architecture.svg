@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="960" viewBox="0 0 1600 960" role="img" aria-label="LinkPulse — Website Monitoring architecture diagram" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYToyZTJiZjU0ZS1kMGRhLTQ2ZGEtYTk2MS1hYjQ3ZmMwZGJhYTkAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaEEp8y9IkabMQM4XGbb5EbcAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDowZDdiNDAxZS01MmIwLTQzYTYtYTAxZi01OGU2ZDk1ZjU0NmRscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoYwb9SD4ChBFka3TCsrVmEgAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgg1WysQwEwIPKTnz3L4YiZrypVYFvFU6TNPptHS5E9xd+kZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaJs9D4APkxKwcXaY4FEdNlYAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCBh3+5F44yt9Q8qevv9HDqGu/V2pVhoFuvQW3UtWwAI/GRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBjmZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjJlMmJmNTRlLWQwZGEtNDZkYS1hOTYxLWFiNDdmYzBkYmFhOS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjgzNWVkMDU3LTA2MzQtNDk2Ni1iMDJiLTVjYmQ4ZjZjMjUwMXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDVbKxDATAg8pOfPcvhiJmvKlVgW8VTpM0+m0dLkT3F36JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggTXrH8Iac7lKRXCQJS9P+6HOYcY1pf6nt1Oq5ZNYBHAmiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggfJG1NfQ6cFU2kLgBqNMDuLyhyglPdIaPzLArq/aca7h0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQKczqSww70SY2BszF6EaZ+qU8X8x/RKHaOU+4gnA9iB3oAjLEQrKpmFqRtHbcev1dWcqMXI+C6kUBlxYHQq4Kqs=</c2pa:manifest></metadata>
+<title>LinkPulse — Website Monitoring architecture</title>
+<defs>
+<pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#1a2433"/></pattern>
+<radialGradient id="g1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(150 -40) scale(620 520)"><stop offset="0" stop-color="#3ddbb4" stop-opacity=".11"/><stop offset="1" stop-color="#3ddbb4" stop-opacity="0"/></radialGradient>
+<radialGradient id="g2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1520 1000) scale(700 520)"><stop offset="0" stop-color="#6ea8fe" stop-opacity=".09"/><stop offset="1" stop-color="#6ea8fe" stop-opacity="0"/></radialGradient>
+<linearGradient id="cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#161e2c"/><stop offset="1" stop-color="#0f1621"/></linearGradient>
+<linearGradient id="t-blue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6ea8fe" stop-opacity=".13"/><stop offset=".55" stop-color="#6ea8fe" stop-opacity="0"/></linearGradient>
+<linearGradient id="t-teal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3ddbb4" stop-opacity=".13"/><stop offset=".55" stop-color="#3ddbb4" stop-opacity="0"/></linearGradient>
+<linearGradient id="t-violet" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a99bff" stop-opacity=".13"/><stop offset=".55" stop-color="#a99bff" stop-opacity="0"/></linearGradient>
+<linearGradient id="t-amber" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffbe6b" stop-opacity=".13"/><stop offset=".55" stop-color="#ffbe6b" stop-opacity="0"/></linearGradient>
+<filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#000" flood-opacity=".35"/></filter>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1.5,1.5 L9,5 L1.5,8.5 Z" fill="#6f819c" stroke="#6f819c" stroke-width="1" stroke-linejoin="round"/></marker>
+</defs>
+<rect width="1600" height="960" fill="#0a0f16"/><rect width="1600" height="960" fill="url(#dots)"/>
+<rect width="1600" height="960" fill="url(#g1)"/><rect width="1600" height="960" fill="url(#g2)"/>
+<g font-family="Inter, 'SF Pro Text', 'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif">
+<circle cx="79" cy="58" r="4" fill="#3ddbb4"/>
+<text x="93" y="63" fill="#3ddbb4" font-size="14" font-weight="600">System architecture</text>
+<text x="75" y="112" fill="#eef3fa" font-size="36" font-weight="700" letter-spacing="-0.6">LinkPulse — Website Monitoring</text>
+<rect x="75" y="136" width="100" height="28" rx="14" fill="#0f1621" stroke="#263246"/>
+<text x="125" y="155" text-anchor="middle" fill="#8c9bb0" font-size="13" font-weight="500">Go REST API</text>
+<rect x="184.87456250000002" y="136" width="184" height="28" rx="14" fill="#0f1621" stroke="#263246"/>
+<text x="277" y="155" text-anchor="middle" fill="#8c9bb0" font-size="13" font-weight="500">Scheduled website checks</text>
+<rect x="378.61" y="136" width="148" height="28" rx="14" fill="#0f1621" stroke="#263246"/>
+<text x="452" y="155" text-anchor="middle" fill="#8c9bb0" font-size="13" font-weight="500">SQLite result history</text>
+<text x="1439" y="62" fill="#8c9bb0" font-size="12">response / read</text>
+<line x1="1399" y1="58" x2="1429" y2="58" stroke="#6f819c" stroke-width="1.5" stroke-dasharray="4 5"/>
+<text x="1293" y="62" fill="#8c9bb0" font-size="12">request / write</text>
+<line x1="1253" y1="58" x2="1283" y2="58" stroke="#6f819c" stroke-width="1.5"/>
+<text x="75" y="240" fill="#62718a" font-size="13" font-weight="600">Client</text>
+<line x1="75" y1="253" x2="325" y2="253" stroke="#1d2736"/>
+<text x="475" y="240" fill="#62718a" font-size="13" font-weight="600">HTTP API</text>
+<line x1="475" y1="253" x2="725" y2="253" stroke="#1d2736"/>
+<text x="875" y="240" fill="#62718a" font-size="13" font-weight="600">Service core</text>
+<line x1="875" y1="253" x2="1125" y2="253" stroke="#1d2736"/>
+<text x="1275" y="240" fill="#62718a" font-size="13" font-weight="600">Checks &amp; targets</text>
+<line x1="1275" y1="253" x2="1525" y2="253" stroke="#1d2736"/>
+<g filter="url(#sh)"><rect x="75" y="491" width="250" height="148" rx="14" fill="url(#cg)"/></g>
+<rect x="75" y="491" width="250" height="148" rx="14" fill="url(#t-blue)"/>
+<rect x="75.5" y="491.5" width="249" height="147" rx="13.5" fill="none" stroke="#263246"/>
+<circle cx="97" cy="516" r="3.5" fill="#6ea8fe"/>
+<text x="109" y="520" fill="#6ea8fe" font-size="12" font-weight="600">Consumer</text>
+<text x="95" y="549" fill="#eef3fa" font-size="16" font-weight="650">Dashboard / API Client</text>
+<text x="95" y="575" fill="#8c9bb0" font-size="13">Browser interface or</text>
+<text x="95" y="597" fill="#8c9bb0" font-size="13">external HTTP client</text>
+<g filter="url(#sh)"><rect x="475" y="491" width="250" height="148" rx="14" fill="url(#cg)"/></g>
+<rect x="475" y="491" width="250" height="148" rx="14" fill="url(#t-teal)"/>
+<rect x="475.5" y="491.5" width="249" height="147" rx="13.5" fill="none" stroke="#263246"/>
+<circle cx="497" cy="516" r="3.5" fill="#3ddbb4"/>
+<text x="509" y="520" fill="#3ddbb4" font-size="12" font-weight="600">Entry point</text>
+<text x="495" y="549" fill="#eef3fa" font-size="16" font-weight="650">Go HTTP Server</text>
+<text x="495" y="575" fill="#8c9bb0" font-size="13">net/http routes</text>
+<text x="495" y="597" fill="#8c9bb0" font-size="13">/health · /api/monitors</text>
+<text x="495" y="619" fill="#8c9bb0" font-size="13">JSON request / response</text>
+<g filter="url(#sh)"><rect x="875" y="276" width="250" height="148" rx="14" fill="url(#cg)"/></g>
+<rect x="875" y="276" width="250" height="148" rx="14" fill="url(#t-blue)"/>
+<rect x="875.5" y="276.5" width="249" height="147" rx="13.5" fill="none" stroke="#263246"/>
+<circle cx="897" cy="301" r="3.5" fill="#6ea8fe"/>
+<text x="909" y="305" fill="#6ea8fe" font-size="12" font-weight="600">Request path</text>
+<text x="895" y="334" fill="#eef3fa" font-size="16" font-weight="650">Monitor Handlers</text>
+<text x="895" y="360" fill="#8c9bb0" font-size="13">CRUD operations</text>
+<text x="895" y="382" fill="#8c9bb0" font-size="13">validate monitor input</text>
+<g filter="url(#sh)"><rect x="875" y="491" width="250" height="148" rx="14" fill="url(#cg)"/></g>
+<rect x="875" y="491" width="250" height="148" rx="14" fill="url(#t-teal)"/>
+<rect x="875.5" y="491.5" width="249" height="147" rx="13.5" fill="none" stroke="#263246"/>
+<circle cx="897" cy="516" r="3.5" fill="#3ddbb4"/>
+<text x="909" y="520" fill="#3ddbb4" font-size="12" font-weight="600">Persistence</text>
+<text x="895" y="549" fill="#eef3fa" font-size="16" font-weight="650">SQLite Database</text>
+<text x="895" y="575" fill="#8c9bb0" font-size="13">monitors</text>
+<text x="895" y="597" fill="#8c9bb0" font-size="13">check_results</text>
+<g filter="url(#sh)"><rect x="875" y="716" width="250" height="148" rx="14" fill="url(#cg)"/></g>
+<rect x="875" y="716" width="250" height="148" rx="14" fill="url(#t-violet)"/>
+<rect x="875.5" y="716.5" width="249" height="147" rx="13.5" fill="none" stroke="#263246"/>
+<circle cx="897" cy="741" r="3.5" fill="#a99bff"/>
+<text x="909" y="745" fill="#a99bff" font-size="12" font-weight="600">Scheduled path</text>
+<text x="895" y="774" fill="#eef3fa" font-size="16" font-weight="650">Background Worker</text>
+<text x="895" y="800" fill="#8c9bb0" font-size="13">single goroutine</text>
+<text x="895" y="822" fill="#8c9bb0" font-size="13">loads enabled monitors</text>
+<text x="895" y="844" fill="#8c9bb0" font-size="13">respects check interval</text>
+<g filter="url(#sh)"><rect x="1275" y="491" width="250" height="148" rx="14" fill="url(#cg)"/></g>
+<rect x="1275" y="491" width="250" height="148" rx="14" fill="url(#t-amber)"/>
+<rect x="1275.5" y="491.5" width="249" height="147" rx="13.5" fill="none" stroke="#263246"/>
+<circle cx="1297" cy="516" r="3.5" fill="#ffbe6b"/>
+<text x="1309" y="520" fill="#ffbe6b" font-size="12" font-weight="600">Check</text>
+<text x="1295" y="549" fill="#eef3fa" font-size="16" font-weight="650">Website Checker</text>
+<text x="1295" y="575" fill="#8c9bb0" font-size="13">HTTP request</text>
+<text x="1295" y="597" fill="#8c9bb0" font-size="13">records status + latency</text>
+<g filter="url(#sh)"><rect x="1275" y="716" width="250" height="148" rx="14" fill="url(#cg)"/></g>
+<rect x="1275" y="716" width="250" height="148" rx="14" fill="url(#t-blue)"/>
+<rect x="1275.5" y="716.5" width="249" height="147" rx="13.5" fill="none" stroke="#263246"/>
+<circle cx="1297" cy="741" r="3.5" fill="#6ea8fe"/>
+<text x="1309" y="745" fill="#6ea8fe" font-size="12" font-weight="600">External targets</text>
+<text x="1295" y="774" fill="#eef3fa" font-size="16" font-weight="650">Monitored Websites</text>
+<text x="1295" y="800" fill="#8c9bb0" font-size="13">Google · Amazon · any URL</text>
+<text x="1295" y="822" fill="#8c9bb0" font-size="13">HTTP response</text>
+<path d="M325,565 L475,565" fill="none" stroke="#6f819c" stroke-width="1.5" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M725,530 L788.0,530.0 Q800,530 800.0,518.0 L800.0,362.0 Q800,350 812.0,350.0 L875,350" fill="none" stroke="#6f819c" stroke-width="1.5" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M725,600 L788.0,600.0 Q800,600 800.0,612.0 L800.0,778.0 Q800,790 812.0,790.0 L875,790" fill="none" stroke="#6f819c" stroke-width="1.5" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M1000,424 L1000,491" fill="none" stroke="#6f819c" stroke-width="1.5" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M1000,639 L1000,716" fill="none" stroke="#6f819c" stroke-width="1.5" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M1125,350 L1188.0,350.0 Q1200,350 1200.0,362.0 L1200.0,518.0 Q1200,530 1212.0,530.0 L1275,530" fill="none" stroke="#6f819c" stroke-width="1.5" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M1125,790 L1188.0,790.0 Q1200,790 1200.0,778.0 L1200.0,612.0 Q1200,600 1212.0,600.0 L1275,600" fill="none" stroke="#6f819c" stroke-width="1.5" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M1275,565 L1125,565" fill="none" stroke="#6f819c" stroke-width="1.5" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M1400,639 L1400,716" fill="none" stroke="#6f819c" stroke-width="1.5" stroke-linecap="round" marker-start="url(#ah)" marker-end="url(#ah)"/>
+<rect x="359.7" y="554.0" width="80.7" height="22" rx="11" fill="#0f1621" stroke="#2a364a"/>
+<text x="400.0" y="569.0" text-anchor="middle" fill="#b3c0d3" font-size="11" font-weight="500">HTTP / JSON</text>
+<rect x="754.5" y="429.0" width="91.0" height="22" rx="11" fill="#0f1621" stroke="#2a364a"/>
+<text x="800.0" y="444.0" text-anchor="middle" fill="#b3c0d3" font-size="11" font-weight="500">CRUD request</text>
+<rect x="750.4" y="684.0" width="99.3" height="22" rx="11" fill="#0f1621" stroke="#2a364a"/>
+<text x="800.0" y="699.0" text-anchor="middle" fill="#b3c0d3" font-size="11" font-weight="500">worker lifecycle</text>
+<rect x="936.9" y="446.5" width="126.2" height="22" rx="11" fill="#0f1621" stroke="#2a364a"/>
+<text x="1000.0" y="461.5" text-anchor="middle" fill="#b3c0d3" font-size="11" font-weight="500">read / write monitors</text>
+<rect x="935.0" y="666.5" width="129.9" height="22" rx="11" fill="#0f1621" stroke="#2a364a"/>
+<text x="1000.0" y="681.5" text-anchor="middle" fill="#b3c0d3" font-size="11" font-weight="500">monitor configuration</text>
+<rect x="1154.6" y="429.0" width="90.7" height="22" rx="11" fill="#0f1621" stroke="#2a364a"/>
+<text x="1200.0" y="444.0" text-anchor="middle" fill="#b3c0d3" font-size="11" font-weight="500">manual check</text>
+<rect x="1147.7" y="684.0" width="104.6" height="22" rx="11" fill="#0f1621" stroke="#2a364a"/>
+<text x="1200.0" y="699.0" text-anchor="middle" fill="#b3c0d3" font-size="11" font-weight="500">scheduled check</text>
+<rect x="1138.6" y="554.0" width="122.8" height="22" rx="11" fill="#0f1621" stroke="#2a364a"/>
+<text x="1200.0" y="569.0" text-anchor="middle" fill="#b3c0d3" font-size="11" font-weight="500">append check result</text>
+<rect x="1314.4" y="666.5" width="171.2" height="22" rx="11" fill="#0f1621" stroke="#2a364a"/>
+<text x="1400.0" y="681.5" text-anchor="middle" fill="#b3c0d3" font-size="11" font-weight="500">HTTP probe · status + latency</text>
+<line x1="75" y1="900" x2="1525" y2="900" stroke="#1d2736"/>
+<text x="75" y="930" fill="#62718a" font-size="13">Request flow: API handlers manage monitors; the scheduled worker and manual-check endpoint share the checker and persist results.</text>
+</g></svg>

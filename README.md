@@ -147,26 +147,15 @@ POST /api/monitors
 
 ---
 
-## ⚙️ How It Works
+## 🏗️ System Architecture
 
-```text
-Create Monitor
-        │
-        ▼
-Background Worker
-        │
-        ▼
-Periodic Website Check
-        │
-        ▼
-Measure Response Time
-        │
-        ▼
-Store Status & History
-        │
-        ▼
-Retrieve Monitoring Data via REST API
-```
+The Go HTTP server exposes health and monitor-management routes. Monitor handlers manage configuration in SQLite, while the background worker checks enabled sites according to their configured intervals. Manual checks use the same checker; both paths record status, latency, and errors in the check history.
+
+<p align="center">
+  <img src="docs/architecture.svg" alt="LinkPulse architecture: Go HTTP API, monitor handlers, background worker, website checker, monitored sites, and SQLite" width="100%" />
+</p>
+
+The scheduled worker runs as a single background goroutine. It and the manual-check endpoint share the website checker and persist results in SQLite.
 
 ---
 
