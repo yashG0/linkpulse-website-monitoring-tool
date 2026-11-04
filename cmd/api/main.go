@@ -6,6 +6,7 @@ import (
 	"net/http"
 	"os"
 	"os/signal"
+	"sync"
 	"syscall"
 	"time"
 
@@ -16,33 +17,53 @@ import (
 )
 
 func main() {
-	stop := make(chan struct{})
-	quit := make(chan os.Signal, 1)
-	signal.Notify(
-		quit,
-		os.Interrupt,
-		syscall.SIGTERM,
-	)
-	defer signal.Stop(quit)
-	cfg := config.Load()
+	// capture the Ctrl+C signal from user and stop it when function end!
+	ctx, stopSignals := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
+	defer stopSignals()
 
+	// either the project configuration load or gracefully exit the program!
+	cfg := config.MustLoad()
+
+	// init the sqlite db instance and exit when the function end!
 	db.Init(cfg)
 	defer db.DB.Close()
-
+	// create new server router/mux with configuration!
 	srv := server.New(cfg)
-	go checker.StartWorker(stop)
+
+	// added waitgroup to track the no of goroutine by adding and subtracting as per the work done!
+	var wg sync.WaitGroup
+
+	// start the workers here
+	wg.Go(func() {
+		checker.StartWorker(ctx.Done())
+	})
+
+	// listen the server over go-routine function and exit the program when error!
 	go func() {
-		if err := srv.ListenAndServe(); err != nil && err != http.ErrServerClosed {
+		err := srv.ListenAndServe()
+		if err != nil && err != http.ErrServerClosed {
 			log.Fatal(err)
 		}
 	}()
-	<-quit
+
+	// wait, untill the signal arrives
+	<-ctx.Done()
+
+	// handle the second ctrl+c force quit
+	stopSignals()
+	
+	// gracefully shutdown the server and docker
 	log.Println("Shutdown signal received")
-	close(stop)
-	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	shutDownCtx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancel()
-	if err := srv.Shutdown(ctx); err != nil {
+
+	// handlling the shutdown here
+	err := srv.Shutdown(shutDownCtx)
+	if err != nil {
 		log.Printf("Server shutdown error: %v", err)
 	}
+
+	// wait untill all goroutine finished task.
+	wg.Wait()
 	log.Println("Application stopped")
 }

@@ -17,7 +17,7 @@ type Config struct {
 	HTTPTimeout time.Duration
 }
 
-func Load() Config {
+func MustLoad() Config {
 	_ = godotenv.Load()
 	// if err != nil {
 	// 	log.Fatal("Failed to load .env file")

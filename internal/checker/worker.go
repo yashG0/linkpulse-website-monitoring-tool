@@ -2,6 +2,7 @@ package checker
 
 import (
 	"database/sql"
+	"errors"
 	"log"
 	"time"
 
@@ -10,45 +11,43 @@ import (
 
 func StartWorker(stop <-chan struct{}) {
 	for {
-		monitors, err := db.GetEnabledMonitors()
-		if err != nil {
-			log.Printf("Failed to fetch monitors: %v", err)
-			continue
-		}
+		checkDue(stop)
 
-		for _, m := range monitors {
-			lastChecked, err := db.GetLastCheckTime(m.ID)
-			if err == sql.ErrNoRows {
-				result := CheckMonitor(&m)
-				if err := db.CreateResult(&result); err != nil {
-					log.Println(err)
-				}
-				continue
-			}
-			if err != nil {
-				log.Println(err)
-				continue
-			}
-
-			elapsed := time.Since(lastChecked)
-			if elapsed < time.Duration(m.Interval)*time.Second {
-				continue
-			}
-
-			result := CheckMonitor(&m)
-			err = db.CreateResult(&result)
-			if err != nil {
-				log.Print(err)
-				continue
-			}
-		}
 		select {
 		case <-time.After(5 * time.Second):
-			// continue next iteration
-
 		case <-stop:
-			log.Println("Worker stopped")
+			log.Println("Worker stopped!")
 			return
+		}
+	}
+}
+
+func checkDue(stop <-chan struct{}) {
+	monitors, err := db.GetEnabledMonitors()
+	if err != nil {
+		log.Printf("Failed to fetch monitor: %v", err)
+		return
+	}
+
+	for _, m := range monitors {
+		select {
+		case <-stop:
+			return
+		default:
+		}
+
+		var lastChecked, err = db.GetLastCheckTime(m.ID)
+		if err != nil && errors.Is(err, sql.ErrNoRows) {
+			log.Println(err)
+			continue
+		}
+		if err == nil && time.Since(lastChecked) < time.Duration(m.Interval)*time.Second {
+			continue
+		}
+		result := CheckMonitor(&m)
+		err = db.CreateResult(&result)
+		if err != nil {
+			log.Println(err)
 		}
 	}
 }
