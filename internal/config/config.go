@@ -35,7 +35,8 @@ func MustLoad() Config {
 		log.Fatal("DATABASE environment variable is required")
 	}
 	return Config{
-		Port:     port,
-		Database: database,
+		Port:        port,
+		Database:    database,
+		HTTPTimeout: time.Second * 10,
 	}
 }
